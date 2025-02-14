@@ -57,3 +57,70 @@ Lastly, we will select our VS Code Interpreter
 Now your project is ready and the real fun can begin
 
 Don't forget to regularly Git add-commit-push to keep everything up to date
+
+## Workflow for this Jupyter Notebook
+
+### Step 1
+
+1. Add a Title using Markdown
+2. Create a header with the author name, purpose, and date
+3. Create a numbered list for imports 
+4. Create a Python cell for the import statements
+
+### Step 2
+
+The dataset used for this project is the tips dataset from seaborn.
+
+This dataset contains 7 features that relate to restaurant tips.
+
+Load data into a pandas Dataframe
+
+Example:
+
+```shell
+# Load the Tips dataset into pandas DataFrame
+tips_df: pd.DataFrame = sns.load_dataset('tips')
+
+# List column names
+tips_df.columns
+
+# Inspect first few rows of the DataFrame
+tips_df.head()
+```
+
+### Step 3
+
+Initial Data Inspection
+
+After loading the data, it's important to know what we're working with, so we take an initial look at our DataFrame.
+
+Example:
+
+```shell
+# Specify the number of rows to display
+tips_df.head(10)
+
+# Inspect the shape of the DataFrame with shape attribute
+# The shape is a tuple with count of rows and columns in the DataFrame
+tips_df.shape
+
+# Inspect the data types of the columns with dtypes attribute
+# The data types are returned as a pandas Series
+tips_df.dtypes
+
+# Inspect the data types of the columns with info() method
+tips_df.info()
+```
+
+### Step 4
+
+Initial Descriptive Statistics
+
+We now look at the summary statistics by using the DataFrame describe() method.
+
+Example:
+
+```shell
+# Inspect summary statistics for numerical columns
+tips_df.describe()
+```
