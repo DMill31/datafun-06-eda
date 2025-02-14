@@ -73,6 +73,8 @@ The dataset used for this project is the tips dataset from seaborn.
 
 This dataset contains 7 features that relate to restaurant tips.
 
+[dataset](https://github.com/mwaskom/seaborn-data/blob/master/tips.csv)
+
 Load data into a pandas Dataframe
 
 Example:
