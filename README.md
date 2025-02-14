@@ -60,6 +60,12 @@ Don't forget to regularly Git add-commit-push to keep everything up to date
 
 ## Workflow for this Jupyter Notebook
 
+The dataset used for this project is the tips dataset from seaborn.
+
+This dataset contains 7 features that relate to restaurant tips.
+
+[dataset](https://github.com/mwaskom/seaborn-data/blob/master/tips.csv)
+
 ### Step 1
 
 1. Add a Title using Markdown
@@ -68,12 +74,6 @@ Don't forget to regularly Git add-commit-push to keep everything up to date
 4. Create a Python cell for the import statements
 
 ### Step 2
-
-The dataset used for this project is the tips dataset from seaborn.
-
-This dataset contains 7 features that relate to restaurant tips.
-
-[dataset](https://github.com/mwaskom/seaborn-data/blob/master/tips.csv)
 
 Load data into a pandas Dataframe
 
