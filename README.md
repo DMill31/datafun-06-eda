@@ -123,3 +123,42 @@ Example:
 # Inspect summary statistics for numerical columns
 tips_df.describe()
 ```
+
+### Step 5 Part 1
+
+Initial Data Distribution for Numerical Columns
+
+We show some histograms using the hist() method
+
+Example:
+
+```shell
+# Inspect histograms for ALL numerical columns
+tips_df.hist()
+
+# Show all plots
+matplotlib.pyplot.show()
+```
+
+### Step 5 Part 2
+
+Initial Data Distribution for Categorical Columns
+
+Now we'll show histograms using the value_counts() method and a loop.
+
+Example:
+
+```shell
+#Show value counts of the 'day' column
+print(tips_df['day'].value_counts())
+
+
+#Inspect value counts
+for col in tips_df.select_dtypes(include='category').columns:
+    sns.countplot(x=col, data=tips_df)
+    matplotlib.pyplot.title(f'Distribution of {col}')
+    matplotlib.pyplot.show()
+
+#Show all plots
+matplotlib.pyplot.show()
+```
