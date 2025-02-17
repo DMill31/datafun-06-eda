@@ -66,6 +66,23 @@ This dataset contains 7 features that relate to restaurant tips.
 
 [dataset](https://github.com/mwaskom/seaborn-data/blob/master/tips.csv)
 
+**Features:**
+
+1. total_bill
+    - The total charge that the diners owe
+2. tip
+    - The amount the diners tipped
+3. sex
+    - Sex of the server
+4. smoker
+    - Whether the server is a smoker
+5. day
+    - What day of the week the diners visited
+6. time
+    - What time of day the diners visited
+7. size
+    - The amount of people dining together
+
 ### Step 1
 
 1. Add a Title using Markdown
