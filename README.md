@@ -109,9 +109,6 @@ tips_df.shape
 # Inspect the data types of the columns with dtypes attribute
 # The data types are returned as a pandas Series
 tips_df.dtypes
-
-# Inspect the data types of the columns with info() method
-tips_df.info()
 ```
 
 ### Step 4
