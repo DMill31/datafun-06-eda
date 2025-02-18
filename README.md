@@ -166,11 +166,11 @@ Now we'll show histograms using the value_counts() method and a loop.
 Example:
 
 ```shell
-#Show value counts of the 'day' column
+# Show value counts of the 'day' column
 print(tips_df['day'].value_counts())
 
 
-#Inspect value counts
+# Inspect value counts
 for col in tips_df.select_dtypes(include='category').columns:
     sns.countplot(x=col, data=tips_df)
     matplotlib.pyplot.title(f'Distribution of {col}')
@@ -178,4 +178,21 @@ for col in tips_df.select_dtypes(include='category').columns:
 
 #Show all plots
 matplotlib.pyplot.show()
+```
+
+### Step 6
+
+Initial Data Transformation and Feature Engineering
+
+In this part of the project, columns will be renamed and at least one new column will be created.
+
+Example:
+```shell
+# Renaming Columns
+tips_df.rename(columns={'total_bill': 'Total Bill', 'tip': 'Tip',
+                        'day': 'Day of Week', 'sex': 'Sex of Server',
+                        'size': 'Number of Diners'}, inplace=True)
+
+# Creating a new column
+tips_df['Tip Percentage'] = tips_df['Tip'] / tips_df['Total Bill']
 ```
