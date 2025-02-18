@@ -196,3 +196,32 @@ tips_df.rename(columns={'total_bill': 'Total Bill', 'tip': 'Tip',
 # Creating a new column
 tips_df['Tip Percentage'] = tips_df['Tip'] / tips_df['Total Bill']
 ```
+
+### Step 7
+
+Initial Visualizations
+
+In this section we create multiple charts to present the data and give insights based on the outcomes.
+
+Example for a pairplot:
+```shell
+# Create a pairplot
+sns.pairplot(tips_df, hue='Day of Week')
+
+# Show all plots
+matplotlib.pyplot.show()
+```
+
+Example for a scatterplot:
+```shell
+# Create a scatter plot
+scatter_plt = sns.scatterplot(x='Tip Percentage', y='Number of Diners', data=tips_df)
+
+# Set the title and labels
+scatter_plt.set_title('Chart 1. Tip Percentage vs. Number of Diners')
+scatter_plt.set_xlabel('Tip Percentage')
+scatter_plt.set_ylabel('Number of Diners')
+
+# Show the plot
+matplotlib.pyplot.show()
+```
