@@ -225,3 +225,7 @@ scatter_plt.set_ylabel('Number of Diners')
 # Show the plot
 matplotlib.pyplot.show()
 ```
+
+### Step 8
+
+Now it's time to lay out your initial insights.  Summarize your findings, then go back and check over how the story is conveyed throughout the notebook.  Make the notebook easy to follow along while remaining logical and engaging.
